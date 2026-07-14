@@ -11,7 +11,8 @@ This project implements an end-to-end **Real-time Traffic Monitoring and Statist
 ## 🎥 Demo & Visuals
 *(Note: Replace the image path below with a screenshot or short GIF from your `snapshots/` folder after pushing to GitHub to showcase your model in action!)*
 
-![Traffic Monitoring Demo](snapshots/demo_preview.jpg)
+<img width="95" height="103" alt="car_6_231118" src="https://github.com/user-attachments/assets/233435bd-3474-4c81-b04c-6b7e36d54c10" />
+
 
 ## ✨ Key Features
 * **Multi-Class Vehicle Detection:** Accurate real-time recognition of cars, motorbikes, buses, and trucks using YOLOv8.
