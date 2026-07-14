@@ -8,7 +8,8 @@ A professional, real-time Computer Vision application designed for intelligent t
 
 Below is the real-time performance of the intelligent traffic monitoring system operating on the test video feed:
 
-![Smart Traffic Monitoring System Interface](https://github.com/user-attachments/assets/placeholder-image.png)
+<img width="588" height="305" alt="Screenshot (227)" src="https://github.com/user-attachments/assets/411700c0-7c69-4c72-9e0b-90f107dc24fd" />
+
 
 *Figure 1: The system GUI displaying multi-class vehicle detection, dynamic trajectory tracking IDs, virtual line-crossing count indicators, live statistical charts, and automated traffic jam warnings ("CANH BAO: UN TAC").*
 
