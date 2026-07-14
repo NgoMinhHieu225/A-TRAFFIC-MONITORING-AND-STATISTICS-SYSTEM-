@@ -1,39 +1,47 @@
-# 🚦 Real-time Traffic Monitoring and Statistics System
+# 🚀 Smart Traffic Monitoring and Statistics System
 
-![Python](https://img.shields.io/badge/python-3.10%2B-blue)
-![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-00ffff)
-![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=flat&logo=opencv&logoColor=white)
-![Status](https://img.shields.io/badge/status-active-success.svg)
+A professional, real-time Computer Vision application designed for intelligent transportation systems (ITS). Utilizing **YOLOv8** for high-accuracy object detection and advanced multi-object tracking algorithms, this system monitors traffic flow, tracks vehicle trajectories, counts lane crossings, and dynamically triggers congestion alerts via a modern graphical user interface (GUI).
 
-## 📌 Introduction
-This project implements an end-to-end **Real-time Traffic Monitoring and Statistics System** using Computer Vision and Deep Learning. Powered by **YOLOv8** and object tracking algorithms, the system detects, classifies, and tracks motor vehicles (cars, motorbikes, buses, trucks) in real-time video streams to assess traffic density and counting statistics.
+---
 
-## 🎥 Demo & Visuals
+## 🎥 Demo / Results
 
+Below is the real-time performance of the intelligent traffic monitoring system operating on the test video feed:
 
-<img width="588" height="305" alt="Screenshot (227)" src="https://github.com/user-attachments/assets/9c4c0d66-0c38-4ab5-b3e0-07fa896a7993" />
+![Smart Traffic Monitoring System Interface](https://github.com/user-attachments/assets/placeholder-image.png)
 
+*Figure 1: The system GUI displaying multi-class vehicle detection, dynamic trajectory tracking IDs, virtual line-crossing count indicators, live statistical charts, and automated traffic jam warnings ("CANH BAO: UN TAC").*
 
+---
 
 ## ✨ Key Features
-* **Multi-Class Vehicle Detection:** Accurate real-time recognition of cars, motorbikes, buses, and trucks using YOLOv8.
-* **Deep Object Tracking:** Maintains continuous trajectory tracking for individual vehicles across consecutive frames.
-* **Automated Traffic Counting:** Dynamically counts vehicles crossing predefined virtual check-lines or zones.
-* **Flow & Density Assessment:** Provides real-time traffic statistics to aid in smart city routing and congestion analysis.
+
+- **Multi-Class Vehicle Detection:** High-fidelity, real-time recognition of various transportation classes including Cars, Motorbikes, Buses, and Trucks powered by a customized **YOLOv8** model.
+- **Deep Object Tracking:** Robust multi-object tracking that maintains continuous, unique identity (ID) assignments for individual vehicles across sequential video frames.
+- **Automated Traffic Counting:** Dynamically registers and updates vehicle counts as they cross predefined virtual tracking zones or check-lines (Directional Flow Analysis).
+- **Intelligent Congestion Alerts:** Real-time density assessment that automatically flags traffic delays or gridlocks based on the active vehicle count within designated regions.
+- **Interactive Analytics Dashboard:** A highly intuitive **CustomTkinter** dark-mode user interface integrating live data logs, statistical summaries, and dynamic graphical charts (**Matplotlib**).
+- **Data Export Capability:** Seamless one-click extraction of historical traffic logs directly into structured Excel report formats (`.xlsx`) for downstream analysis.
+
+---
 
 ## 🛠️ Tech Stack & Environment
-* **Language:** Python 3.10+
-* **Deep Learning Framework:** PyTorch, YOLOv8 (by Ultralytics)
-* **Computer Vision & Math:** OpenCV, NumPy
-* **Package Management:** `pip` / `uv`
+
+- **Core Language:** Python 3.10+
+- **Deep Learning Framework:** PyTorch, YOLOv8 (by Ultralytics)
+- **Computer Vision Pipeline:** OpenCV (cv2)
+- **Data Visualization:** Matplotlib (integrated with Tkinter backend via FigureCanvasTkAgg)
+- **User Interface:** CustomTkinter (Modern Dark/Blue Theme)
+- **Data Handling & Reports:** Pandas / OpenPyXL (Excel Exporting Engine)
+
+---
 
 ## 📂 Project Structure
+
 ```text
-A-TRAFFIC-MONITORING-AND-STATISTICS-SYSTEM-/
-│
-├── snapshots/               # Sample output images and detection frames
-├── yolov8n.pt               # YOLOv8 pre-trained model weights
-├── main.py                  # Main execution script for traffic tracking
-├── requirements.txt         # Project dependencies and libraries
-├── .gitignore               # Ignored files (videos, cache, virtual envs)
-└── README.md                # Project documentation
+├── .gitignore               # Automated Git tracking exclusions
+├── README.md                # Comprehensive system documentation
+├── Bao_cao_Giao_thong.xlsx   # Sample generated traffic data report
+├── best.pt                  # Optimized YOLOv8 custom weights
+├── config_vach.json          # Configuration file for virtual counting lines
+├── main_gui.py               # Main application entry point & GUI layout
