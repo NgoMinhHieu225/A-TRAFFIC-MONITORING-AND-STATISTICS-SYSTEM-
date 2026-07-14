@@ -11,7 +11,8 @@ This project implements an end-to-end **Real-time Traffic Monitoring and Statist
 ## 🎥 Demo & Visuals
 
 
-<img width="95" height="103" alt="car_6_231118" src="https://github.com/user-attachments/assets/233435bd-3474-4c81-b04c-6b7e36d54c10" />
+<img width="588" height="305" alt="Screenshot (227)" src="https://github.com/user-attachments/assets/9c4c0d66-0c38-4ab5-b3e0-07fa896a7993" />
+
 
 
 ## ✨ Key Features
